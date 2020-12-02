@@ -1,0 +1,33 @@
+
+
+.header{
+    height: 400px;
+    width: 100%;
+
+    overflow: hidden;
+    background-color: #FFAFCC;
+}
+
+
+.opacity{
+    opacity: .7;
+    background-color: rgb(241, 199, 199);
+}
+
+
+
+.z5{
+    z-index: 5;
+}
+.z10{
+    z-index: 10;
+}
+.z15{
+    z-index: 15;
+}
+.z20{
+    z-index: 20;
+}
+
+
+

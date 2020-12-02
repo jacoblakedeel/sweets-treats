@@ -1,0 +1,17 @@
+
+
+navbar- sticky
+    home
+    gallery-
+    contact us-
+
+home:
+    -maybe a slideshow of desserts
+    -logo
+    -footer with copyright
+    -put menu on home page
+    -link to facebook
+
+
+
+
