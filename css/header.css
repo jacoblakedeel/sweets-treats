@@ -5,13 +5,12 @@
     width: 100%;
 
     overflow: hidden;
-    background-color: #FFAFCC;
 }
 
 
 .opacity{
-    opacity: .7;
-    background-color: rgb(241, 199, 199);
+    opacity: .1;
+    background-color: rgb(17, 130, 196);
 }
 
 

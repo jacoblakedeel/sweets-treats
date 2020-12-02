@@ -42,8 +42,43 @@
 
 
 .sweetfont{
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Fugaz One', cursive;
+    color: #ae7cca;
 }
 
 
 
+.darksection{
+
+    background-color: #FFAFCC;
+    width: 100%;
+    height: 500px;
+}
+.lightsection{
+    background-color: #e8c6fc;
+    width: 100%;
+    height: 500px;
+}
+.darksectionmenu{
+
+    background-color: #FFAFCC;
+    width: 100%;
+    height: 500px;
+}
+.lightsectionmenu{
+    background-color: #e8c6fc;
+    width: 100%;
+    height: 500px;
+}
+
+
+.footerstyle{
+    background-color: #A2D2FF;
+    width: 100%;
+    height: 100px;
+}
+
+
+p{
+    text-align: center;
+}
