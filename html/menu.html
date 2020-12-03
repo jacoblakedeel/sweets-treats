@@ -21,8 +21,14 @@
             <div class="header position-relative top">
 
                 <!--text-->
-                <div class="position-absolute top h-100 w-100 d-flex flex-column justify-content-center align-items-center z20 sweetfont display-1">
-                    Sweets, Treats, & More
+                <div class="position-absolute top h-100 w-100 d-flex flex-column justify-content-center align-items-center z20">
+                    
+                    <div class="display-2 cp-text-accent d-none d-md-block sweetfont2">
+                        Sweets, Treats, & More!
+                    </div>
+                    <div class="display-2 cp-text-accent sweetfont2 d-md-none d-lg-none d-xl-none">
+                        ST&M
+                    </div>
                 </div>
 
                 <!--opacity-->
@@ -35,27 +41,34 @@
                     <!--header image-->
                     <img width="100%" src="../images/cupcake-banner.svg" alt="">
                 </div>
-
+                <div class="position-absolute top z5">
+                    <!--sprinkles-->
+                    <img src="../images/sprinkles-banner.jpg" height="100%" width="100%" alt="">
+                    
+                </div>
             </div>
         </div> <!--end of header-->
 
         <!--nav bar-->
 
-        <nav class="navbar navbar-expand-lg navbar-dark bgdeeppink cp-text-lightGray">
-            <a class="navbar-brand" href="#"></a>
+        <nav class="navbar navbar-expand-lg navbar-dark bgdeeppink cp-text-lightGray sticky-top">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn sweetfont d-none d-md-block" data-toggle="modal" data-target="#exampleModal">
+                Start Your Order
+            </button>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link afont" href="../index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    <li class="nav-item active">
+                        <a class="nav-link afont" href="gallery.html">Gallery</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Menu</a>
+                    <li class="nav-item active">
+                        <a class="nav-link afont" href="menu.html">Menu</a>
                     </li>
                 </ul>
             </div>
@@ -134,7 +147,7 @@ $35 Cakes: Rum (With Pecans or Walnuts) <br><br>
 
 
 All cupcakes except vegan topped with fresh made Butter Cream Icing - Vanilla, Cream Cheese, Chocolate or Strawberry <br> <br>
-Cake / Icing Flavors:  Vanilla or Chocolate <br> 
+Cake / Icing Flavors: <br> Vanilla or Chocolate <br> 
   
 1 Dozen - $15  |  2 to 5 Dozen - $12/Each  |  6+ Dozen - $10/Each <br><br>
 
@@ -147,10 +160,10 @@ Gluten Free and/or Vegan <br>  1 Dozen - $20  /  2 Dozen - $35
 
 Made with Rice Flour, Organic Sugar - Vegan can be made with
 
-Egg Replacement or Golden Flax Seeds <br><br><br><br>
+Egg Replacement or Golden Flax Seeds <br><br>
 
 
-Toppings:  Sprinkles - Sanding Sugar - Nuts - Crushed Peppermint - Toasted Coconut - Stripped with Vanilla or Chocolate -  Mini Chocolate Chips <br><br> 
+Toppings: <br> Sprinkles - Sanding Sugar - Nuts - Crushed Peppermint - Toasted Coconut - Stripped with Vanilla or Chocolate -  Mini Chocolate Chips <br><br> 
 
 Add an edible image to any dozen cupcakes for $10.00 <br><br>
 Add theme rings or cupcake toppers to any
@@ -175,9 +188,46 @@ dozen cupcakes for an extra fee
         <footer class="footerstyle d-flex justify-content-center align-items-center sweetfont display-5">
             <div>
                 To Order Your Array of Sweets & Treats please contact: Nicole Boney / 404-552-0930 / sweets@iboney.com
+                <br><br>
+                ©Copyright Sweets, Treats, and More 2020
             </div>
 
         </footer>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title sweetfont" id="exampleModalLabel">Start Your Order</h5>
+                        <button type="button" class="close sweetfont" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label sweetfont">Enter Email Address:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label sweetfont">Tell Us About Your Sweet Idea!:</label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn bgcarolinablue sweetfont" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn bgcarolinablue sweetfont">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 

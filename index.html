@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="css/header.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
 
@@ -21,8 +22,14 @@
             <div class="header position-relative top">
 
                 <!--text-->
-                <div class="position-absolute top h-100 w-100 d-flex flex-column justify-content-center align-items-center z20 sweetfont display-1">
-                    Sweets, Treats, & More
+                <div class="position-absolute top h-100 w-100 d-flex flex-column justify-content-center align-items-center z20">
+                    
+                    <div class="display-2 cp-text-accent d-none d-md-block sweetfont2">
+                        Sweets, Treats, & More!
+                    </div>
+                    <div class="display-2 cp-text-accent sweetfont2 d-md-none d-lg-none d-xl-none">
+                        ST&M
+                    </div>
                 </div>
 
                 <!--opacity-->
@@ -35,11 +42,10 @@
                     <!--header image-->
                     <img width="100%" src="images/cupcake-banner.svg" alt="">
                 </div>
-                <div class="row">
-                    <div class="col position-absolute  z10 h-100 w-100">
-                        <!--logo-->
-                        <img width="5%" src="images/sweetlogo.png" alt="">
-                    </div>
+                <div class="position-absolute top z5">
+                    <!--sprinkles-->
+                    <img src="images/sprinkles-banner.jpg" height="100%" width="100%" alt="">
+                    
                 </div>
                 
 
@@ -48,21 +54,25 @@
 
         <!--nav bar-->
 
-        <nav class="navbar navbar-expand-lg navbar-dark bgdeeppink cp-text-lightGray d-flex">
-            <a class="navbar-brand" href="#"></a>
+        <nav class="navbar navbar-expand-lg navbar-dark bgdeeppink cp-text-lightGray d-flex sticky-top">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn sweetfont d-none d-md-block" data-toggle="modal" data-target="#exampleModal">
+                Start Your Order
+            </button>
+            
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link afont" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="html/gallery.html">Gallery</a>
+                    <li class="nav-item active">
+                        <a class="nav-link afont" href="html/gallery.html">Gallery</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="html/menu.html">Menu</a>
+                    <li class="nav-item active">
+                        <a class="nav-link afont" href="html/menu.html">Menu</a>
                     </li>
                 </ul>
             </div>
@@ -72,10 +82,10 @@
 
         <main>
             <div class="row lightsection m-0">
-                <div class="col d-flex justify-content-center align-items-center">
-                    <img src="images/cakepops.jpg" height="85%" width="70%" alt="rainbow cupcakes">
+                <div class="col-xs-block col-sm-9 col-md-7 col-lg-6 col-xl-5 d-flex justify-content-center align-items-center">
+                    <img src="images/cakepops.jpg" height="90%" width="90%" alt="rainbow cupcakes">
                 </div>
-                <div class="col d-flex justify-content-center align-items-center sweetfont">
+                <div class="col-xs-block col-sm-3 col-md-5 col-lg-6 col-xl-7 d-flex justify-content-center align-items-center sweetfont">
                     <h2><p>At Sweets, Treats, and More we create custom desserts that will make your special day even more special!</p></h2>
                 </div>
             </div>
@@ -84,31 +94,67 @@
                     <h2><p>Our dessert specialists make it easy and fun to make your sweet ideas come to life!</p></h2>
                 </div>
                 <div class="col d-flex justify-content-center align-items-center">
-                    <img src="images/rumcake.jpg" height="85%" width="70%" alt="rainbow cupcakes">
+                    <img src="images/rumcake.jpg" height="80%" width="90%" alt="rainbow cupcakes">
                 </div>
             </div>
             <div class="row lightsection m-0">
                 <div class="col d-flex justify-content-center align-items-center">
-                    <img src="images/strawcake.jpg" height="85%" width="70%" alt="rainbow cupcakes">
+                    <img src="images/strawcake.jpg" height="90%" width="100%" alt="rainbow cupcakes">
                 </div>
                 <div class="col d-flex justify-content-center align-items-center sweetfont">
-                    <h2><p>Come in today to get started on your next masterpiece!</p></h2>
+                    <h2><p>Call us or click "Start Your Order!" today to get started on your next masterpiece!</p></h2>
                 </div>
             </div>
+            
         </main>
 
         <!--end of main section-->
 
 
-
-
-
-        <footer class="footerstyle d-flex justify-content-center align-items-center sweetfont display-5">
+        <footer class="footerstyle d-flex justify-content-center align-items-center sweetfont">
             <div>
                 To Order Your Array of Sweets & Treats please contact: Nicole Boney / 404-552-0930 / sweets@iboney.com
+                <br><br>
+                ©Copyright Sweets, Treats, and More 2020
             </div>
 
         </footer>
+
+
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title sweetfont" id="exampleModalLabel">Start Your Order</h5>
+                                        <button type="button" class="close sweetfont" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                </div>
+                                <div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="recipient-name" class="col-form-label sweetfont">Enter Email Address:</label>
+                                                <input type="text" class="form-control" id="recipient-name">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="message-text" class="col-form-label sweetfont">Tell Us About Your Sweet Idea!:</label>
+                                                <textarea class="form-control" id="message-text"></textarea>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+    
+                                <div class="modal-footer">
+                                    <button type="button" class="btn bgcarolinablue sweetfont" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn bgcarolinablue sweetfont">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
 
 
 
